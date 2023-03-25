@@ -1,4 +1,7 @@
 import React from "react";
+import { FaChevronDown } from "react-icons/fa";
+import { FiUpload } from "react-icons/fi";
+import { BsThreeDots } from "react-icons/bs";
 
 const Home = () => {
   return (
@@ -9,11 +12,72 @@ const Home = () => {
         </div>
         <div className="grid-container">
           <div className="image_div">
-            <img src="/images/home_img.jpg" alt="" />
+            <div className="hover_shade">
+              <img src="/images/home_img.jpg" alt="" />
+            </div>
+            <div className="image_overlay">
+              <div className="image_overlay_child_parent">
+                <div className="overla_top">
+                  <div className="d-flex">
+                    <span>
+                      <p>Home Decor </p>
+                    </span>
+                    <span>
+                      <FaChevronDown className="downkey" />
+                    </span>
+                  </div>
+                  <div>
+                    <button>Save</button>
+                  </div>
+                </div>
+                <div className="overlay_bottom">
+                  <div className="d-flex"></div>
+                  <div className="d-flex">
+                    <div className="bottom_icon_overlay">
+                      <FiUpload />
+                    </div>
+                    <div className="bottom_icon_overlay">
+                      <BsThreeDots />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div className="image_div">
-            <img src="/images/2.jpg" alt="" />
+            <div className="hover_shade">
+              <img src="/images/2.jpg" alt="" />
+            </div>
+            <div className="image_overlay">
+              <div className="image_overlay_child_parent">
+                <div className="overla_top">
+                  <div className="d-flex pt-2">
+                    <span>
+                      <p>Home Decor </p>
+                    </span>
+                    <span>
+                      <FaChevronDown className="downkey" />
+                    </span>
+                  </div>
+                  <div>
+                    <button>Save</button>
+                  </div>
+                </div>
+                <div className="overlay_bottom">
+                  <div className="d-flex"></div>
+                  <div className="d-flex">
+                    <div className="bottom_icon_overlay">
+                      <FiUpload />
+                    </div>
+                    <div className="bottom_icon_overlay">
+                      <BsThreeDots />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+
           <div className="image_div">
             <img src="/images/8.jpg" alt="" />
           </div>
