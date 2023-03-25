@@ -223,3 +223,55 @@ body {
 .header_list3 {
   width: 121px;
 }
+.home_content {
+  padding-top: 20px;
+}
+.feed_text {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  display: flex;
+}
+.home_content h6 {
+  font-size: 16px;
+  color: #000000;
+  border-bottom: 3px solid black;
+  display: inline;
+  font-family: "poppins";
+  padding-bottom: 5px;
+}
+/* .image_div {
+  background: red;
+
+  width: 280px;
+  height: 150px;
+} */
+.grid-container {
+  /* display: grid;
+  grid-gap: 10px;*/
+  grid-template-columns: repeat(6, 1fr);
+
+  padding: 5px 12px;
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); */
+  grid-gap: 10px;
+}
+
+.image_div {
+  /* padding: 20px;
+  text-align: center;
+  background: url("/public/images/home_img.jpg");
+  background-size: 100%;
+  background-position: center;
+  background: cover; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image_div img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
