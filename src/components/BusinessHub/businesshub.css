@@ -13,9 +13,199 @@
   padding: 16px 24px;
   border-radius: 12px;
   background: linear-gradient(rgb(247, 247, 247) 0%, rgb(239, 239, 239) 40%);
+  justify-content: space-between;
 }
 .business_hub_logo {
   width: 61px;
   background: #fcfafa;
   border-radius: 50%;
+}
+.Bussiness_hub_sec h6 {
+  font-size: 19px;
+}
+.Bussiness_hub_sec {
+  cursor: pointer;
+}
+
+.businesshub_header {
+  justify-content: space-between;
+}
+.businesshub_header p {
+  font-size: 13px;
+  color: #111;
+  margin: 0px;
+}
+.businesshub_sec_p2 {
+  position: relative;
+  left: -60px;
+  top: 9px;
+}
+.view p,
+.followers p {
+  font-size: 14px;
+}
+.view h6,
+.followers h6 {
+  font-size: 19px;
+}
+.businesshub_sec_p3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.businesshub_sec_p3 p {
+  margin: 0px;
+  font-size: 15px;
+  font-weight: 500;
+  background: white;
+  padding: 10px 12px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.1s all ease-in;
+}
+.businesshub_sec_p3 p:hover {
+  background: none;
+}
+.performance {
+  padding: 30px 30px;
+  padding-bottom: 12px;
+  border-radius: 12px;
+  background: linear-gradient(rgb(247, 247, 247) 0%, rgb(239, 239, 239) 40%);
+  margin-top: 35px;
+}
+.performance h5 {
+  font-size: 25px;
+  font-size: "poppins";
+  margin-bottom: 4px;
+}
+.performance p {
+  color: #5f5f5f;
+  font-size: 14px;
+  margin: 0px;
+}
+.proformance_List1 {
+  display: flex;
+  justify-content: space-between;
+}
+.perfomance_svg_parent {
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.analytics_overview {
+  background-color: white;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.032);
+  padding-top: 20px;
+}
+.analytics_overviews1 {
+  display: flex;
+  justify-content: space-between;
+  height: 29px;
+}
+.analytics_overview h6 {
+  font-size: 16px;
+  margin: 0px;
+}
+.analytic_tooltip p {
+  color: white;
+  margin: 0px;
+  font-size: 12px;
+  font-family: 800;
+}
+.analytic_tooltip {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.analytics_link {
+  font-size: 20px;
+  /* margin-top: -7px; */
+}
+.analytics_link_parent {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-top: -7px;
+  cursor: pointer;
+}
+.analytics_link_parent:hover {
+  background: #e9e9e9;
+}
+.analytic_tooltip_parent {
+  /* margin-left: 15px; */
+  width: 40px;
+  height: 37px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -10px;
+}
+.analytic_tooltip_parent:hover {
+  background: #e9e9e9;
+}
+.analytics_cards {
+  margin-top: 25px;
+}
+.analytics_cards .A_cards {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  border-radius: 7px;
+  padding: 10px 14px;
+}
+.A_cards p {
+  color: black;
+  font-size: 14px;
+  font-family: "poppins";
+}
+.A_cards h5 {
+  margin-top: 5px;
+  font-size: 27px;
+}
+.A_cards h6 {
+  font-size: 13px;
+  margin-right: 13px;
+}
+
+/*  */
+.header_list {
+  padding: 12px 15px;
+  transition: all 0.2s ease-in;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.header_list:hover {
+  background: #f0f0f0;
+  border-radius: 30px;
+}
+.header_list_toppons {
+  width: 121px;
+}
+.topPin_span {
+  display: flex;
+}
+.topPin_span svg {
+  margin-top: 4px;
+}
+.toppins_dropdown_1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.analytics_drop_menu {
+  width: 140%;
 }
