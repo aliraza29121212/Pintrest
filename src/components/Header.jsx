@@ -6,6 +6,7 @@ import { BsFillBellFill } from "react-icons/bs";
 import { AiFillMessage } from "react-icons/ai";
 import { HiSpeakerphone } from "react-icons/hi";
 import { FiArrowUpRight } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   function businessFunc() {
@@ -55,15 +56,28 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // input Search field
+  const input_search = () => {
+    const header_list_search = document.querySelector(".header_list_search");
+    const input_filed = document.querySelector(".input_filed");
+
+    header_list_search.style.width = "860px";
+    header_list_search.style.backgroundColor = "#f0f0f0";
+
+    input_filed.style.display = "block";
+    input_filed.style.width = "98%";
+    input_filed.style.backgroundColor = "#f0f0f0";
+  };
+
   return (
     <>
       <div
         className="Header_main_parent"
-        style={{
-          boxShadow: hasScrolled
-            ? "rgba(0, 0, 0, 0.1) 0px 8px 8px -8px"
-            : "none",
-        }}
+        // style={{
+        //   boxShadow: hasScrolled
+        //     ? "rgba(0, 0, 0, 0.1) 0px 8px 8px -8px"
+        //     : "none",
+        // }}
       >
         <div className="header_parent bg-darl ">
           <div className="left_part d-flex">
@@ -76,10 +90,15 @@ const Header = () => {
               </div>
               <div className="drop_menu" id="business_dropDown">
                 <div>
-                  <h6>Business hub</h6>
+                  <h6>
+                    {/* <a href="/businesshub">Hoom feed</a> */}
+                    <Link to="/businesshub"> Business hub</Link>
+                  </h6>
                 </div>
                 <div>
-                  <h6>Business hub</h6>
+                  <h6>
+                    <Link to="/"> Home feed </Link>
+                  </h6>
                 </div>
               </div>
             </div>
@@ -119,12 +138,17 @@ const Header = () => {
           </div>
           <div className="right_part d-flex">
             <div>
-              <div className="header_list_search ">
+              <div className="header_list_search d-flex" onClick={input_search}>
                 <GrFormSearch className="right_icons_search" />
+                <input
+                  type="email"
+                  className="input_filed"
+                  placeholder="Search"
+                />
               </div>
             </div>
             <div className="bell">
-              <div className="header_list ">
+              <div className="header_list">
                 <BsFillBellFill className="right_icons" />
               </div>
               <div className="left_header_hover_div">

@@ -20,7 +20,7 @@ body {
   width: 100%;
   z-index: 999;
   background: white;
-  height: 77px;
+  height: 81px;
 }
 .Header_main_parent {
   transition: box-shadow 300ms ease-in-out 0s;
@@ -82,6 +82,14 @@ body {
 .right_part .header_list_search:hover {
   background: #f0f0f0;
   border-radius: 30px;
+}
+.input_filed {
+  border: none;
+  width: 0px;
+  display: none;
+}
+.input_filed:focus {
+  outline: none;
 }
 .right_part .header_list {
   padding: 8px 11px;
@@ -414,6 +422,12 @@ body {
   justify-content: center;
   margin: auto;
   display: flex;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  background: white;
+  margin-top: -10px;
+  padding-bottom: 16px;
 }
 .home_content h6 {
   font-size: 16px;
@@ -433,6 +447,7 @@ body {
   /* display: grid;
   grid-gap: 10px;*/
   grid-template-columns: repeat(6, 1fr);
+  margin-top: 60px;
 
   padding: 5px 12px;
   display: grid;

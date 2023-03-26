@@ -1,0 +1,21 @@
+.business_hub {
+  position: relative;
+  top: 100px;
+}
+.business_header h2 {
+  font-size: 25px;
+  font-family: "poppins";
+  margin: auto;
+  font-weight: 500;
+}
+.business_header_part2 {
+  width: 85%;
+  padding: 16px 24px;
+  border-radius: 12px;
+  background: linear-gradient(rgb(247, 247, 247) 0%, rgb(239, 239, 239) 40%);
+}
+.business_hub_logo {
+  width: 61px;
+  background: #fcfafa;
+  border-radius: 50%;
+}

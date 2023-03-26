@@ -1,13 +1,37 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { FaChevronDown } from "react-icons/fa";
 import { FiUpload } from "react-icons/fi";
 import { BsThreeDots } from "react-icons/bs";
 
 const Home = () => {
+  // header shadow
+
+  const [hasScrolled, setHasScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.pageYOffset > 0) {
+        setHasScrolled(true);
+      } else {
+        setHasScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
       <div className="home_content">
-        <div className="feed_text">
+        <div
+          className="feed_text pt-3"
+          style={{
+            boxShadow: hasScrolled
+              ? "rgba(0, 0, 0, 0.1) 0px 8px 8px -8px"
+              : "none",
+          }}
+        >
           <h6>For you</h6>
         </div>
         <div className="grid-container">
